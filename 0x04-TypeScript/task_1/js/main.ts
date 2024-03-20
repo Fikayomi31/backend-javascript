@@ -18,3 +18,22 @@ export function printTeacher(firstName: String, lastName: String) {
 export interface printTeacherFunction {
    (firstName: String, lastName: String): String
 }
+
+class StudentClass {
+    //Properties
+    private firstName: String;
+    private lastName: String;
+
+    constructor(firstName: String, lastName: String) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    workOnHomework() {
+        return 'Currently working';
+    }
+
+    displayName() {
+        return `${this.firstName}`;
+    }
+}
